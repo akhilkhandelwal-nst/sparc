@@ -3,9 +3,9 @@ var router = express.Router();
 
 // User side pages -----
 
-router.get("/&origin=:origin", function (req, res) {
-  // Gracefully handle malformed origin query and serve the home page
-  res.redirect("/");
+router.get("/", function (req, res) {
+  // Render home page
+  res.render("index");
 });
 
 router.get("/contact", function (req, res) {

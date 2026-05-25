@@ -79,8 +79,7 @@ function projectCreate(name, owner, description, date, cost, url, categories, cb
         date: date,
         cost: cost,
         url: url,
-        categories: categories,
-        images: ['/uploads/projects/default.jpg']
+        categories: categories
     }
 
     var project = new Project(projectdetail);
